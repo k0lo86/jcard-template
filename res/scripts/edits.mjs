@@ -29,6 +29,7 @@ export function setFrontContents(output, aContents, bContents, separator) {
       .map((entry) => {
         return entry.valueOrLkgOrPreset;
       })
+      .filter((value) => value !== NUL_STRING)
       .join("\n"),
     separator.valueOrLkgOrPreset
   );

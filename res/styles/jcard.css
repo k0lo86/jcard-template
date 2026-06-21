@@ -259,11 +259,11 @@
   align-items: stretch;
   display: flex;
   flex-flow: column nowrap;
-  height: calc(var(--lengthJCardHeight) - var(--heightJCardCover));
+  height: var(--lengthJCardHeight);
   justify-content: space-between;
   padding: calc(var(--spacerJCard) / 3) var(--spacerJCard);
   position: relative;
-  top: var(--heightJCardCover);
+  top: 0;
 }
 
 #jcard .template-front-title-group,
