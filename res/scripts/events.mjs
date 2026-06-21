@@ -118,14 +118,6 @@ function setupEntryEvents() {
     o.sideAContents,
     OPTIONS_COALESCE
   );
-  addBackListener(
-    i.sideBLabel,
-    i.sideBContents,
-    i.contentsSeparator,
-    i.shortBack,
-    o.sideBContents,
-    OPTIONS_COALESCE
-  );
   addClassListener(
     i.backContentsVisible,
     o.back,
@@ -165,7 +157,6 @@ function setupEntryEvents() {
   );
   addFrontListener(
     i.sideAContents,
-    i.sideBContents,
     i.contentsSeparator,
     o.contents,
     OPTIONS_COALESCE
@@ -174,7 +165,6 @@ function setupEntryEvents() {
   addHtmlListener(i.noteLower, o.noteLower, OPTIONS_COALESCE);
   addHtmlListener(i.noteUpper, o.noteUpper, OPTIONS_COALESCE);
   addHtmlListener(i.sideALabel, o.sideALabel, OPTIONS_COALESCE);
-  addHtmlListener(i.sideBLabel, o.sideBLabel, OPTIONS_COALESCE);
   addHtmlListener(i.titleLower, o.frontTitleLower, OPTIONS_COALESCE);
   addHtmlListener(i.titleLower, o.spineTitleLower, OPTIONS_COALESCE);
   addHtmlListener(i.titleUpper, o.frontTitleUpper, OPTIONS_COALESCE);
@@ -308,18 +298,17 @@ function addBeforeUnloadListenerBy(entry) {
  */
 function addFrontListener(
   aContents,
-  bContents,
   separator,
   output,
   options = NUL_OBJECT
 ) {
-  [aContents, bContents, separator].forEach((entry) => {
+  [aContents, separator].forEach((entry) => {
     entry.element.addEventListener(
       "input",
       makeHandler(() => {
         return (
           doBeforeEdit(entry) &&
-          setFrontContents(output, aContents, bContents, separator) &&
+          setFrontContents(output, aContents, separator) &&
           doAfterEdit(entry)
         );
       }, options)

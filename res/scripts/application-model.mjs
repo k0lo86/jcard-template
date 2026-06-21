@@ -172,14 +172,6 @@ export const application = Object.freeze({
         id: "side-a-label",
         preset: "Side A",
       }),
-      sideBContents: new DataFormEntry({
-        id: "side-b-contents",
-        preset: NUL_STRING,
-      }),
-      sideBLabel: new DataFormEntry({
-        id: "side-b-label",
-        preset: "Side B",
-      }),
       spineTitleAlignment: new DataFormEntry({
         id: "spine-title-alignment",
         preset: "left",
@@ -279,8 +271,6 @@ export const application = Object.freeze({
     root: new JCardOutput(),
     sideAContents: new JCardOutput({ class: "side-a-contents" }),
     sideALabel: new JCardOutput({ class: "side-a-label" }),
-    sideBContents: new JCardOutput({ class: "side-b-contents" }),
-    sideBLabel: new JCardOutput({ class: "side-b-label" }),
     spine: new JCardOutput({ class: "spine" }),
     spineTitleGroup: new JCardOutput({ class: "spine-title-group" }),
     spineTitleLower: new JCardOutput({ class: "spine-title-lower" }),

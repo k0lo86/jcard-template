@@ -23,14 +23,9 @@ export function setBackContents(output, label, contents, separator, shortBack) {
 }
 
 /** Sets the front contents to the given output. */
-export function setFrontContents(output, aContents, bContents, separator) {
+export function setFrontContents(output, aContents, separator) {
   output.element.innerHTML = replaceLineEnds(
-    [aContents, bContents]
-      .map((entry) => {
-        return entry.valueOrLkgOrPreset;
-      })
-      .filter((value) => value !== NUL_STRING)
-      .join("\n"),
+    aContents.valueOrLkgOrPreset,
     separator.valueOrLkgOrPreset
   );
   return true;
