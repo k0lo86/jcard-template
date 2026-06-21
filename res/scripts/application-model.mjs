@@ -32,11 +32,9 @@ export const application = Object.freeze({
   ),
   /** Form buttons. */
   buttons: Object.freeze({
-    coverReset: new FormButton({ id: "cover-reset" }),
     load: new FormButton({ id: "load" }),
     print: new FormButton({ id: "print" }),
     save: new FormButton({ id: "save" }),
-    saveCover: new FormButton({ id: "save-cover" }),
     viewCollapse: new FormButton({ id: "view-collapse" }),
     viewExpand: new FormButton({ id: "view-expand" }),
   }),
@@ -77,20 +75,6 @@ export const application = Object.freeze({
       contentsSeparator: new DataFormEntry({
         id: "contents-separator",
         preset: "&nbsp;• ",
-      }),
-      coverImage: new DataFormEntry({
-        id: "cover-image",
-        persistent: true,
-        preset: NUL_STRING,
-        save: false,
-      }),
-      coverHeightFactor: new DataFormEntry({
-        id: "cover-height-factor",
-        preset: 1,
-      }),
-      fillCover: new DataFormEntry({
-        id: "fill-cover",
-        preset: false,
       }),
       fontFamily: new DataFormEntry({
         id: "font-family",
@@ -202,12 +186,7 @@ export const application = Object.freeze({
       }),
     }),
     /** Load. */
-    load: Object.freeze({
-      cover: new FormEntry({
-        id: "load-cover",
-        preset: NUL_STRING,
-      }),
-    }),
+    load: Object.freeze({}),
     /** Print. */
     print: Object.freeze({
       count: new FormEntry({
@@ -259,7 +238,6 @@ export const application = Object.freeze({
     back: new JCardOutput({ class: "back" }),
     boundaries: new JCardOutput({ class: "boundaries" }),
     contents: new JCardOutput({ class: "contents" }),
-    cover: new JCardOutput({ class: "cover" }),
     footer: new JCardOutput({ class: "footer" }),
     front: new JCardOutput({ class: "front" }),
     frontTitleGroup: new JCardOutput({ class: "front-title-group" }),

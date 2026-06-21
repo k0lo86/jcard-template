@@ -6,7 +6,6 @@
  */
 
 import {
-  COVER_IMAGE,
   DATA_VERSION,
   FILE_NAME,
   FILE_SIZE_MAX_SAFE,
@@ -128,18 +127,7 @@ export function updateData() {
   return update([getDataEntries]);
 }
 
-/** Resets the cover image. */
-export function resetCover() {
-  const entry = getDataEntry("coverImage");
-  entry.value = NUL_STRING;
-  getOutput("cover").element.src = COVER_IMAGE;
-  setModifiedBy(entry);
-}
 
-/** Saves the cover image as a file download. */
-export function saveCover() {
-  return download(getCardName(), getOutput("cover").element.src);
-}
 
 /** Prints the window only if print form entries are good. */
 export function testAndPrint() {

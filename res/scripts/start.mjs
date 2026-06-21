@@ -77,7 +77,6 @@ populateDataSaves({
 });
 update();
 setWindowSubtitle();
-getButton("coverReset").element.click();
 Object.entries(PARAMS).forEach(([argument, handle]) => {
   if (argumentss.has(argument)) {
     const entry = handle.getter(handle.key);
