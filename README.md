@@ -1,6 +1,6 @@
 # J-Card Template
 
-[[**Launch Application**](https://ed7n.github.io/jcard-template)]—[[**Homepage**](https://ed7n.github.io/net/jcard-template)]
+[[**Launch Application**](https://k0lo86.github.io/jcard-template)]—[[**Homepage**](https://k0lo86.github.io/jcard-template)]
 
 ## Building
 
