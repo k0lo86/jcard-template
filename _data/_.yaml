@@ -26,7 +26,7 @@ key1: "_home-1"
 menu:
   - label: "Home"
     class: "out"
-    href: "https://k0lo86.github.io/jcard-template"
+    href: "https://k0lo86.github.io/net/jcard-template"
   - label: "Privacy"
     class: "out"
     href: "https://k0lo86.github.io/pages/privacy"
