@@ -208,6 +208,9 @@
   font-size: calc(var(--jCardFrontSize) / var(--jCardFontSizeFactorInvert));
   line-height: 1.2;
   text-align: var(--jCardFrontContentsAlignment);
+  line-height: 1.2;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 }
 
 #jcard .template-cover {
@@ -256,6 +259,8 @@
   padding: calc(var(--spacerJCard) / 3) var(--spacerJCard);
   position: relative;
   top: 0;
+  padding-left: 5px;
+  padding-right: 0px;
 }
 
 #jcard .template-front-title-group,
