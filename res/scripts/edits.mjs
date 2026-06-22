@@ -12,12 +12,7 @@ import { replaceLineEnds } from "./common/functions.mjs";
  */
 export function setBackContents(output, label, contents, separator, shortBack) {
   output.element.innerHTML = contents.valueOrLkgOrPreset
-    ? (shortBack.valueOrLkgOrPreset && label.valueOrLkgOrPreset
-        ? '<span class="bold">' +
-          label.valueOrLkgOrPreset +
-          ":&nbsp;&nbsp;</span>"
-        : NUL_STRING) +
-      replaceLineEnds(contents.valueOrLkgOrPreset, separator.valueOrLkgOrPreset)
+    ? replaceLineEnds(contents.valueOrLkgOrPreset, separator.valueOrLkgOrPreset)
     : NUL_STRING;
   return true;
 }
