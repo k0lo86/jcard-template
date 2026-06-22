@@ -287,6 +287,7 @@
 
 #jcard .template-spine-title-upper {
   font-size: calc(var(--jCardSpineTitleUpperSize) / var(--jCardFontSizeFactorInvert));
+  font-weight: bold;
 }
 
 #jcard .template-note-group,
