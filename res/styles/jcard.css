@@ -1,11 +1,7 @@
 #jcard .template {
-  --heightJCardCover: calc(
-    var(--lengthJCardCover) * var(--jCardCoverHeightFactor)
-  );
+  --heightJCardCover: calc(var(--lengthJCardCover) * var(--jCardCoverHeightFactor));
   --lengthJCardBack: var(--lengthJCardBackStandard);
-  --lengthJCardBackDelta: calc(
-    var(--lengthJCardBackTemplate) - var(--lengthJCardBack)
-  );
+  --lengthJCardBackDelta: calc(var(--lengthJCardBackTemplate) - var(--lengthJCardBack));
   --lengthJCardBackShort: 0.6in;
   --lengthJCardBackStandard: 1in;
   --lengthJCardBackTemplate: var(--lengthJCardBackStandard);
@@ -17,9 +13,7 @@
   --lengthJCardFront: 2.556in;
   --lengthJCardHeight: 4in;
   --lengthJCardSpine: var(--lengthJCardSpineStandard);
-  --lengthJCardSpineDelta: calc(
-    var(--lengthJCardSpineTemplate) - var(--lengthJCardSpine)
-  );
+  --lengthJCardSpineDelta: calc(var(--lengthJCardSpineTemplate) - var(--lengthJCardSpine));
   --lengthJCardSpineShort: 0.4in;
   --lengthJCardSpineStandard: 0.5in;
   --lengthJCardSpineTemplate: var(--lengthJCardSpineStandard);
@@ -146,10 +140,7 @@
   font-family: var(--jCardFontFamily);
   height: var(--lengthJCardHeight);
   line-height: 1.1;
-  width: calc(
-    var(--lengthJCardBackTemplate) + var(--lengthJCardSpineTemplate) +
-      var(--lengthJCardFront)
-  );
+  width: calc(var(--lengthJCardBackTemplate) + var(--lengthJCardSpineTemplate) + var(--lengthJCardFront));
 }
 
 #jcard .template.short-back {
@@ -192,11 +183,8 @@
   padding: 0 var(--spacerJCard);
   position: absolute;
   text-align: var(--jCardBackContentsAlignment);
-  transform: translate(
-      calc(var(--lengthJCardBackDelta) + var(--lengthJCardSpineDelta)),
-      calc(-1 * var(--lengthJCardBack))
-    )
-    rotate(90deg);
+  transform: translate(calc(var(--lengthJCardBackDelta) + var(--lengthJCardSpineDelta)),
+      calc(-1 * var(--lengthJCardBack))) rotate(90deg);
   transform-origin: bottom left;
   width: var(--lengthJCardHeight);
 }
@@ -270,9 +258,12 @@
   top: 0;
 }
 
+#jcard .template-front-title-upper {
+  font-weight: bold;
+}
+
 #jcard .template-front-title-group,
 #jcard .template-spine-title-group {
-  font-weight: bold;
   white-space: nowrap;
 }
 
@@ -282,9 +273,7 @@
 }
 
 #jcard .template-front-title-lower {
-  font-size: calc(
-    var(--jCardFrontTitleLowerSize) / var(--jCardFontSizeFactorInvert)
-  );
+  font-size: calc(var(--jCardFrontTitleLowerSize) / var(--jCardFontSizeFactorInvert));
 }
 
 #jcard .template-front-title-lower.bold {
@@ -292,9 +281,7 @@
 }
 
 #jcard .template-spine-title-lower {
-  font-size: calc(
-    var(--jCardSpineTitleLowerSize) / var(--jCardFontSizeFactorInvert)
-  );
+  font-size: calc(var(--jCardSpineTitleLowerSize) / var(--jCardFontSizeFactorInvert));
 }
 
 #jcard .template-spine-title-lower.bold {
@@ -302,15 +289,11 @@
 }
 
 #jcard .template-front-title-upper {
-  font-size: calc(
-    var(--jCardFrontTitleUpperSize) / var(--jCardFontSizeFactorInvert)
-  );
+  font-size: calc(var(--jCardFrontTitleUpperSize) / var(--jCardFontSizeFactorInvert));
 }
 
 #jcard .template-spine-title-upper {
-  font-size: calc(
-    var(--jCardSpineTitleUpperSize) / var(--jCardFontSizeFactorInvert)
-  );
+  font-size: calc(var(--jCardSpineTitleUpperSize) / var(--jCardFontSizeFactorInvert));
 }
 
 #jcard .template-note-group,
@@ -348,11 +331,8 @@
   height: var(--lengthJCardSpine);
   justify-content: space-between;
   position: absolute;
-  transform: translate(
-      calc(var(--lengthJCardBackTemplate) + var(--lengthJCardSpineDelta)),
-      calc(-1 * var(--lengthJCardSpine))
-    )
-    rotate(90deg);
+  transform: translate(calc(var(--lengthJCardBackTemplate) + var(--lengthJCardSpineDelta)),
+      calc(-1 * var(--lengthJCardSpine))) rotate(90deg);
   transform-origin: bottom left;
   width: var(--lengthJCardHeight);
 }
@@ -387,8 +367,8 @@ form .follow-font-family {
   font-family: var(--jCardFontFamily);
 }
 
-form label > sub,
-form label > sup {
+form label>sub,
+form label>sup {
   color: var(--colorAccentHigh);
 }
 
