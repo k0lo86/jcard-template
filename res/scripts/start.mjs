@@ -45,7 +45,7 @@ const PARAMS = Object.freeze({
 const argumentss = new URLSearchParams(location.search);
 
 Object.values(getDataEntries())
-  .filter((entry) => !entry.save)
+  .filter((entry) => !entry.save && entry.element.labels)
   .forEach((entry) => {
     entry.element.labels.forEach((label) => {
       const index = label.innerHTML.lastIndexOf(SUFFIX_LABEL);
