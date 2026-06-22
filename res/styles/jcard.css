@@ -258,10 +258,6 @@
   top: 0;
 }
 
-#jcard .template-front-title-upper {
-  font-weight: bold;
-}
-
 #jcard .template-front-title-group,
 #jcard .template-spine-title-group {
   white-space: nowrap;
@@ -276,10 +272,6 @@
   font-size: calc(var(--jCardFrontTitleLowerSize) / var(--jCardFontSizeFactorInvert));
 }
 
-#jcard .template-front-title-lower.bold {
-  font-weight: bold;
-}
-
 #jcard .template-spine-title-lower {
   font-size: calc(var(--jCardSpineTitleLowerSize) / var(--jCardFontSizeFactorInvert));
 }
@@ -290,6 +282,7 @@
 
 #jcard .template-front-title-upper {
   font-size: calc(var(--jCardFrontTitleUpperSize) / var(--jCardFontSizeFactorInvert));
+  font-weight: bold;
 }
 
 #jcard .template-spine-title-upper {
