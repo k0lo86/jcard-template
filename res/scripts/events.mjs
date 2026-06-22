@@ -163,6 +163,9 @@ function setupEntryEvents() {
   addHtmlListener(i.titleLower, o.spineTitleLower, OPTIONS_COALESCE);
   addHtmlListener(i.titleUpper, o.frontTitleUpper, OPTIONS_COALESCE);
   addHtmlListener(i.titleUpper, o.spineTitleUpper, OPTIONS_COALESCE);
+  addClassListener(i.footerBold, o.footer, "bold", OPTIONS_COALESCE);
+  addClassListener(i.titleLowerBoldFront, o.frontTitleLower, "bold", OPTIONS_COALESCE);
+  addClassListener(i.titleLowerBoldSpine, o.spineTitleLower, "bold", OPTIONS_COALESCE);
   addStyleVariableListener(i, "backContentsAlignment", OPTIONS_COALESCE);
   addStyleVariableListener(i, "backSize", OPTIONS_COALESCE_PT);
   addStyleVariableListener(i, "cardColor", OPTIONS_COALESCE);
@@ -172,12 +175,14 @@ function setupEntryEvents() {
   addStyleVariableListener(i, "frontContentsAlignment", OPTIONS_COALESCE);
   addStyleVariableListener(i, "frontSize", OPTIONS_COALESCE_PT);
   addStyleVariableListener(i, "frontTitleAlignment", OPTIONS_COALESCE);
+  addStyleVariableListener(i, "frontTitleLowerSize", OPTIONS_COALESCE_PT);
+  addStyleVariableListener(i, "frontTitleUpperSize", OPTIONS_COALESCE_PT);
   addStyleVariableListener(i, "noteAlignment", OPTIONS_COALESCE);
   addStyleVariableListener(i, "noteSize", OPTIONS_COALESCE_PT);
   addStyleVariableListener(i, "spineTitleAlignment", OPTIONS_COALESCE);
+  addStyleVariableListener(i, "spineTitleLowerSize", OPTIONS_COALESCE_PT);
+  addStyleVariableListener(i, "spineTitleUpperSize", OPTIONS_COALESCE_PT);
   addStyleVariableListener(i, "textColor", OPTIONS_COALESCE);
-  addStyleVariableListener(i, "titleLowerSize", OPTIONS_COALESCE_PT);
-  addStyleVariableListener(i, "titleUpperSize", OPTIONS_COALESCE_PT);
   addStyleVariableListener(
     getApplicationEntries(),
     "fontSizeFactorInvert",

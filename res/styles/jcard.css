@@ -248,6 +248,10 @@
   text-align: var(--jCardFooterAlignment);
 }
 
+#jcard .template-footer.bold {
+  font-weight: bold;
+}
+
 #jcard .template-front {
   height: var(--lengthJCardHeight);
   width: var(--lengthJCardFront);
@@ -277,17 +281,35 @@
   text-align: var(--jCardFrontTitleAlignment);
 }
 
-#jcard .template-front-title-lower,
-#jcard .template-spine-title-lower {
+#jcard .template-front-title-lower {
   font-size: calc(
-    var(--jCardTitleLowerSize) / var(--jCardFontSizeFactorInvert)
+    var(--jCardFrontTitleLowerSize) / var(--jCardFontSizeFactorInvert)
   );
 }
 
-#jcard .template-front-title-upper,
+#jcard .template-front-title-lower.bold {
+  font-weight: bold;
+}
+
+#jcard .template-spine-title-lower {
+  font-size: calc(
+    var(--jCardSpineTitleLowerSize) / var(--jCardFontSizeFactorInvert)
+  );
+}
+
+#jcard .template-spine-title-lower.bold {
+  font-weight: bold;
+}
+
+#jcard .template-front-title-upper {
+  font-size: calc(
+    var(--jCardFrontTitleUpperSize) / var(--jCardFontSizeFactorInvert)
+  );
+}
+
 #jcard .template-spine-title-upper {
   font-size: calc(
-    var(--jCardTitleUpperSize) / var(--jCardFontSizeFactorInvert)
+    var(--jCardSpineTitleUpperSize) / var(--jCardFontSizeFactorInvert)
   );
 }
 

@@ -14,20 +14,6 @@
   </div>
 </div>
 {{closeColumn-}}
-{{openColumnShorter-}}
-<div class="field row {{-fieldRowShortClass}}" id="field-title-upper-size">
-  <label for="input-title-upper-size">Upper size:</label>
-  <div class="input shorter">
-    <input id="input-title-upper-size" type="number" min="0" max="1023" step="0.1" />
-  </div>
-</div>
-<div class="field row {{-fieldRowShortClass}}" id="field-title-lower-size">
-  <label for="input-title-lower-size">Lower size:</label>
-  <div class="input shorter">
-    <input id="input-title-lower-size" type="number" min="0" max="1023" step="0.1" />
-  </div>
-</div>
-{{closeColumn-}}
 {{closeColumns-}}
 </section>
 <section>
@@ -50,9 +36,25 @@
     </select>
   </div>
 </div>
+<div class="field row {{-fieldRowShortClass}}" id="field-front-title-upper-size">
+  <label for="input-front-title-upper-size">Upper size:</label>
+  <div class="input shorter">
+    <input id="input-front-title-upper-size" type="number" min="0" max="1023" step="0.1" />
+  </div>
+</div>
+<div class="field row {{-fieldRowShortClass}}" id="field-front-title-lower-size">
+  <label for="input-front-title-lower-size">Lower size:</label>
+  <div class="input shorter">
+    <input id="input-front-title-lower-size" type="number" min="0" max="1023" step="0.1" />
+  </div>
+</div>
+<div class="field row small" id="field-title-lower-bold-front">
+  <label for="input-title-lower-bold-front">Lower bold:</label>
+  <div class="input">
+    <input id="input-title-lower-bold-front" type="checkbox" />
+  </div>
+</div>
 {{closeColumn-}}
-{{closeSection-}}
-{{openSection-}}
 {{openColumnShorter-}}
 <h4>Spine Output</h4>
 <div class="field row small" id="field-spine-title-visible">
@@ -69,6 +71,24 @@
       <option value="center">Center</option>
       <option value="right">Right</option>
     </select>
+  </div>
+</div>
+<div class="field row {{-fieldRowShortClass}}" id="field-spine-title-upper-size">
+  <label for="input-spine-title-upper-size">Upper size:</label>
+  <div class="input shorter">
+    <input id="input-spine-title-upper-size" type="number" min="0" max="1023" step="0.1" />
+  </div>
+</div>
+<div class="field row {{-fieldRowShortClass}}" id="field-spine-title-lower-size">
+  <label for="input-spine-title-lower-size">Lower size:</label>
+  <div class="input shorter">
+    <input id="input-spine-title-lower-size" type="number" min="0" max="1023" step="0.1" />
+  </div>
+</div>
+<div class="field row small" id="field-title-lower-bold-spine">
+  <label for="input-title-lower-bold-spine">Lower bold:</label>
+  <div class="input">
+    <input id="input-title-lower-bold-spine" type="checkbox" />
   </div>
 </div>
 {{closeColumn-}}

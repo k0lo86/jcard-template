@@ -88,6 +88,10 @@ export const application = Object.freeze({
         id: "footer",
         preset: NUL_STRING,
       }),
+      footerBold: new DataFormEntry({
+        id: "footer-bold",
+        preset: false,
+      }),
       footerAlignment: new DataFormEntry({
         id: "footer-alignment",
         preset: "center",
@@ -119,6 +123,22 @@ export const application = Object.freeze({
       frontTitleVisible: new DataFormEntry({
         id: "front-title-visible",
         preset: true,
+      }),
+      frontTitleLowerSize: new DataFormEntry({
+        id: "front-title-lower-size",
+        preset: 12,
+      }),
+      frontTitleUpperSize: new DataFormEntry({
+        id: "front-title-upper-size",
+        preset: 12,
+      }),
+      titleLowerBoldFront: new DataFormEntry({
+        id: "title-lower-bold-front",
+        preset: false,
+      }),
+      titleLowerBoldSpine: new DataFormEntry({
+        id: "title-lower-bold-spine",
+        preset: false,
       }),
       italicize: new DataFormEntry({
         id: "italicize",
@@ -172,21 +192,25 @@ export const application = Object.freeze({
         id: "text-color",
         preset: "#000000",
       }),
+      spineTitleLowerSize: new DataFormEntry({
+        id: "spine-title-lower-size",
+        preset: 12,
+      }),
+      spineTitleUpperSize: new DataFormEntry({
+        id: "spine-title-upper-size",
+        preset: 12,
+      }),
+      textColor: new DataFormEntry({
+        id: "text-color",
+        preset: "#000000",
+      }),
       titleLower: new DataFormEntry({
         id: "title-lower",
         preset: NUL_STRING,
       }),
-      titleLowerSize: new DataFormEntry({
-        id: "title-lower-size",
-        preset: 12,
-      }),
       titleUpper: new DataFormEntry({
         id: "title-upper",
         preset: NUL_STRING,
-      }),
-      titleUpperSize: new DataFormEntry({
-        id: "title-upper-size",
-        preset: 12,
       }),
     }),
     /** Load. */
