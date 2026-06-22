@@ -176,6 +176,10 @@ export const application = Object.freeze({
         id: "side-a-contents",
         preset: NUL_STRING,
       }),
+      backContents: new DataFormEntry({
+        id: "back-contents",
+        preset: NUL_STRING,
+      }),
       sideALabel: new DataFormEntry({
         id: "side-a-label",
         preset: "Side A",

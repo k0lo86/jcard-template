@@ -106,13 +106,13 @@ function setupEntryEvents() {
   const i = getDataEntries();
   const o = getOutputs();
   addBackListener(
-    i.sideALabel,
-    i.sideAContents,
-    i.backContentsSeparator,
-    i.shortBack,
-    o.sideAContents,
-    OPTIONS_COALESCE
-  );
+     i.sideALabel,
+     i.backContents,
+     i.backContentsSeparator,
+     i.shortBack,
+     o.sideAContents,
+     OPTIONS_COALESCE
+   );
   addClassListener(
     i.backContentsVisible,
     o.back,

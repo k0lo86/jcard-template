@@ -74,6 +74,7 @@ populateDataSaves({
   noteLower: "August 2017",
   sideALabel: "Side A",
   sideAContents: "One of Us\nTwo is the Shoe\nThree for Me\nFour Out the Door",
+  backContents: "One of Us\nTwo is the Shoe\nThree for Me\nFour Out the Door",
 });
 update();
 setWindowSubtitle();
