@@ -108,7 +108,7 @@ function setupEntryEvents() {
   addBackListener(
     i.sideALabel,
     i.sideAContents,
-    i.contentsSeparator,
+    i.backContentsSeparator,
     i.shortBack,
     o.sideAContents,
     OPTIONS_COALESCE

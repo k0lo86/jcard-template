@@ -76,6 +76,10 @@ export const application = Object.freeze({
         id: "contents-separator",
         preset: "<br />",
       }),
+      backContentsSeparator: new DataFormEntry({
+        id: "back-contents-separator",
+        preset: "&nbsp;• ",
+      }),
       fontFamily: new DataFormEntry({
         id: "font-family",
         preset: "Alte Haas Grotesk",
