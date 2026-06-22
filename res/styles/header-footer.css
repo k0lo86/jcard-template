@@ -1,0 +1,164 @@
+article > header .heading > :not(:last-child),
+body > header .heading > :not(:last-child) {
+  margin-block-end: var(--spacer);
+}
+
+article > header .heading > .subtitle::before,
+body > header .heading > .subtitle::before {
+  content: var(--splitHead);
+}
+
+article > header > :not(:last-child),
+article > footer > :not(:last-child),
+body > header > :not(:last-child),
+body > footer > :not(:last-child) {
+  margin-block-end: var(--spacer2);
+}
+
+article > footer,
+body > footer {
+  font-size: var(--fontSizeSmaller);
+}
+
+body > header,
+body > footer {
+  background-color: var(--colorAccentMin);
+  border-block-end-color: var(--colorAccentHigh);
+  border-block-end-width: var(--widthBorder);
+  border-block-start-color: var(--colorAccentHigh);
+  border-block-start-width: var(--widthBorder);
+  border-inline-end-color: var(--colorAccentLow);
+  border-inline-end-style: solid;
+  border-inline-end-width: var(--widthBorder);
+  border-inline-start-color: var(--colorAccentLow);
+  border-inline-start-style: solid;
+  border-inline-start-width: var(--widthBorder);
+}
+
+body > header > section,
+body > footer > section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+body > header > section > :not(:last-child),
+body > footer > section > :not(:last-child) {
+  margin-inline-end: var(--spacer4);
+}
+
+body > header > section > :not(:only-child):not(img),
+body > footer > section > :not(:only-child):not(img) {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+body > header > section > :first-child:not(:only-child),
+body > footer > section > :first-child:not(:only-child),
+body > header > section.reverse > :last-child:not(:only-child),
+body > footer > section.reverse > :last-child:not(:only-child) {
+  text-align: start;
+}
+
+body > header > section > :last-child:not(:only-child),
+body > footer > section > :last-child:not(:only-child),
+body > header > section.reverse > :first-child:not(:only-child),
+body > footer > section.reverse > :first-child:not(:only-child) {
+  text-align: end;
+}
+
+body > header > section.reverse,
+body > footer > section.reverse {
+  flex-direction: row-reverse;
+}
+
+body > header > section.reverse > :not(:last-child),
+body > footer > section.reverse > :not(:last-child) {
+  margin-inline-end: unset;
+  margin-inline-start: var(--spacer4);
+}
+
+body > header:not(:last-child),
+body > footer:first-child {
+  border-block-end-style: solid;
+}
+
+body > header:last-child,
+body > footer:not(:first-child) {
+  border-block-start-style: solid;
+}
+
+body > footer {
+  text-align: center;
+}
+
+body > footer .banner > .title {
+  font-size: var(--fontSizeH1);
+}
+
+body > footer > section {
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  body > header > section,
+  body > footer > section,
+  body > header > section.reverse,
+  body > footer > section.reverse {
+    flex-direction: column;
+  }
+
+  body > header > section > :not(:last-child),
+  body > footer > section > :not(:last-child),
+  body > header > section.reverse > :not(:last-child),
+  body > footer > section.reverse > :not(:last-child) {
+    margin-block-end: var(--spacer2);
+    margin-inline-end: unset;
+    margin-inline-start: unset;
+  }
+
+  body > header > section > :not(:only-child):not(img),
+  body > footer > section > :not(:only-child):not(img) {
+    flex-basis: unset;
+    flex-grow: unset;
+  }
+
+  body > header > section > :first-child:not(:only-child),
+  body > header > section > :last-child:not(:only-child),
+  body > footer > section > :first-child:not(:only-child),
+  body > footer > section > :last-child:not(:only-child),
+  body > header > section.reverse > :first-child:not(:only-child),
+  body > header > section.reverse > :last-child:not(:only-child),
+  body > footer > section.reverse > :first-child:not(:only-child),
+  body > footer > section.reverse > :last-child:not(:only-child) {
+    text-align: unset;
+  }
+
+  body > header > section.invert,
+  body > footer > section.invert,
+  body > header > section.invert.reverse,
+  body > footer > section.invert.reverse {
+    flex-direction: column-reverse;
+  }
+
+  body > header > section.invert > :not(:last-child),
+  body > footer > section.invert > :not(:last-child) {
+    margin-block-end: unset;
+    margin-block-start: var(--spacer2);
+  }
+
+  body > footer > section {
+    align-items: center;
+  }
+}
+
+@media print {
+  body > header,
+  body > footer {
+    background-color: unset;
+  }
+
+  body > header nav,
+  body > footer nav {
+    display: none;
+  }
+}

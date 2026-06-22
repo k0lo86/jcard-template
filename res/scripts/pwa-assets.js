@@ -13,7 +13,7 @@
 /** Page index path. */
 const PATH_PAGE = "/jcard-template/";
 /** Site resource path. */
-const PATH_SITE = "https://k0lo86.github.io/res/";
+const PATH_SITE = PATH_PAGE + "res/";
 /** Request URLs whose response is to be cached. */
 const CACHE_URLS = Object.freeze([
   PATH_PAGE + "",

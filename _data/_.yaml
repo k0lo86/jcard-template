@@ -18,7 +18,7 @@ noNavPage: true
 noNavSite: true
 pathHome: "home"
 pathIcon: "res/media/favicon.png"
-pathRes: "https://k0lo86.github.io/res"
+pathRes: "/jcard-template/res"
 splitSubtitle: ": "
 splitTitle: " - "
 eon: "https://k0lo86.github.io"
